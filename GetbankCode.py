@@ -71,7 +71,7 @@ def capture_and_ocr():
             base_dir = Path(sys.executable).parent
         else:
             base_dir = Path(__file__).resolve().parent
-        config_file = base_dir / 'config_jp.ini'
+        config_file = base_dir / 'config.ini'
 
         if not config_file.is_file():
             print(f"エラー: 設定ファイル 'config.ini' が見つかりません。\nパス: {config_file}")
